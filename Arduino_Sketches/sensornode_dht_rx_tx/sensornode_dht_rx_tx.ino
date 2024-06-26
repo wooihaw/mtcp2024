@@ -59,7 +59,7 @@ void setup() {
   radio.setChannel(80); // the same channel as the sensor node
   radio.setPALevel(RF24_PA_LOW);
   radio.setDataRate(RF24_250KBPS);
-  radio.setPayloadSize(sizeof(SensorData));  // Set payload size to 3 bytes
+  radio.setPayloadSize(sizeof(SensorData));  // Set payload size to 11 bytes
 
   // Open the writing and reading pipes
   radio.openWritingPipe(addressToGateway);
