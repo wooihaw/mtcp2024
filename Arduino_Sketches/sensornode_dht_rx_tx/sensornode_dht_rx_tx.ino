@@ -44,6 +44,7 @@ void setup() {
   
   // Initialize the digital output pin
   pinMode(digitalOutputPin, OUTPUT);
+  digitalWrite(digitalOutputPin, HIGH);  // Turn of relay
 
   // Start DHT sensor
   dht.begin();

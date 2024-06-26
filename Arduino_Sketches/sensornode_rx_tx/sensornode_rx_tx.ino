@@ -34,6 +34,7 @@ void setup() {
   
   // Initialize the digital output pin
   pinMode(digitalOutputPin, OUTPUT);
+  digitalWrite(digitalOutputPin, HIGH);
 
   // Initialize the RF24 module
   if (!radio.begin()) {
